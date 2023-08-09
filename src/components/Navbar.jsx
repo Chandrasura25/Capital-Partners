@@ -1,30 +1,34 @@
 import navbarStyle from "../styles/Navbar.module.css";
+import { useState } from "react";
+import logo from '../assets/logo1.jpg'
 const Navbar = () => {
-  // const menuToggle = document.querySelector(".menuToggle");
-  // const header = document.querySelector("header");
+  const [isActive, setIsActive] = useState(false);
 
-  // menuToggle.addEventListener("click", function () {
-  //   header.classList.toggle("active");
-  // });
+  function toggle() {
+    setIsActive(!isActive);
+  }
+
   return (
     <>
-      <header className={navbarStyle.header}>
+      <header
+        className={`${navbarStyle.header} ${
+          isActive ? navbarStyle.active : ""
+        }`}
+      >
         <a href="#" className={navbarStyle.logo}>
-          My Logo
+          <img src={logo}/>
         </a>
-        <div className={navbarStyle.menuToggle}></div>
+        <div className={navbarStyle.menuToggle} onClick={toggle}></div>
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#"> About us</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#">Investment Sectors</a>
             </li>
             <li>
-              <a href="#">
-                Dropdown ▼
-              </a>
+              <a href="#">Investment Portal ▼</a>
               <ul>
                 <li>
                   <a href="#">Product 01</a>
@@ -34,40 +38,19 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#">
-                    Product 03 <b>+</b>
+                    Product 03
                   </a>
-                  <ul>
-                    <li>
-                      <a href="#">Submenu 01</a>
-                    </li>
-                    <li>
-                      <a href="#">Submenu 02</a>
-                    </li>
-                    <li>
-                      <a href="#">Submenu 03</a>
-                    </li>
-                    <li>
-                      <a href="#">Submenu 04</a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">Portfolio</a>
+              <a href="#">Why you should invest with us</a>
             </li>
             <li>
-              <a href="#">
-                Blog ▼
-              </a>
-              <ul>
-                <li>
-                  <a href="#">Post Link 01</a>
-                </li>
-                <li>
-                  <a href="#">Post Link 02</a>
-                </li>
-              </ul>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Success Stories</a>
             </li>
             <li>
               <a href="#">Contact</a>
