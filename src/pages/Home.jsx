@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import About from "../components/About";
 import homeStyles from "../styles/Home.module.css";
 const Home = () => {
   return (
@@ -6,6 +7,7 @@ const Home = () => {
       <div className={homeStyles.parallaxBg}>
         <div className={homeStyles.content}>
           <Navbar />
+          <About />
         </div>
       </div>
     </div>
