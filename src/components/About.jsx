@@ -1,7 +1,8 @@
+import aboutStyle from '../styles/About.module.css'
 const About = () => {
   return (
-    <div className="container">
-      <div className="slider">
+    <div className={aboutStyle.container}>
+      <div className={aboutStyle.slider}>
         <div className="slide slide1">
           <div className="caption">
             <h2>Slide1</h2>
