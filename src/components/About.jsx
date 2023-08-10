@@ -1,23 +1,42 @@
 import aboutStyle from "../styles/About.module.css";
+import { motion } from "framer-motion";
 const About = () => {
+
+  const Variant = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+}
+const textVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0 },
+};
+const transition = {
+  duration: 1,
+  delay: 0.5,
+};
   return (
     <div className={aboutStyle.container}>
-      <div className={aboutStyle.slider}>
-        <div className={`${aboutStyle.slide} ${aboutStyle.slide1}`}>
+      <motion.div
+        className={aboutStyle.slider}
+      >
+        <motion.div
+          className={`${aboutStyle.slide} ${aboutStyle.slide1}`}
+          variants={Variant}
+        >
           <div className={aboutStyle.caption}>
-            <h2>Slide1</h2>
+            <motion.h2 variants={textVariants} transition={transition}>Welcome to Capital Partners Investment Plc</motion.h2>
             <p>
-              Welcome to Capital Partners Investment Plc, a leading investment
+               A leading investment
               company with a diverse portfolio covering various sectors of the
               economy. With a steadfast commitment to excellence and a track
               record of success, we aim to facilitate growth, create value, and
               generate sustainable returns for our investors.
             </p>
           </div>
-        </div>
-        <div className={`${aboutStyle.slide} ${aboutStyle.slide2}`}>
+        </motion.div>
+        <motion.div className={`${aboutStyle.slide} ${aboutStyle.slide2}`}>
           <div className={aboutStyle.caption}>
-            <h2>Slide2</h2>
+            <h2>Professionalism</h2>
             <p>
               Capital Partners Investment Plc has been duly registered by the
               Corporate Affairs Commission and certified by the Nigeria
@@ -27,7 +46,7 @@ const About = () => {
               service.
             </p>
           </div>
-        </div>
+        </motion.div>
         <div className={`${aboutStyle.slide} ${aboutStyle.slide3}`}>
           <div className={aboutStyle.caption}>
             <h2>Slide3</h2>
@@ -55,7 +74,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className={`${aboutStyle.slide} ${aboutStyle.slide5}`}> 
+        <div className={`${aboutStyle.slide} ${aboutStyle.slide5}`}>
           <div className={aboutStyle.caption}>
             <h2>Slide5</h2>
             <p>
@@ -65,19 +84,22 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className={`${aboutStyle.slide} ${aboutStyle.slide1}`}>
+        <motion.div
+          className={`${aboutStyle.slide} ${aboutStyle.slide1}`}
+          variants={Variant}
+        >
           <div className={aboutStyle.caption}>
-            <h2>Slide1</h2>
+            <motion.h2 variants={textVariants} transition={transition}>Welcome to Capital Partners Investment Plc</motion.h2>
             <p>
-              Welcome to Capital Partners Investment Plc, a leading investment
+               A leading investment
               company with a diverse portfolio covering various sectors of the
               economy. With a steadfast commitment to excellence and a track
               record of success, we aim to facilitate growth, create value, and
               generate sustainable returns for our investors.
             </p>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

@@ -1,8 +1,10 @@
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import homeStyles from "../styles/Home.module.css";
+import {AnimatePresence} from "framer-motion";
 const Home = () => {
   return (
+    <AnimatePresence>
     <div className={homeStyles.container}>
       <div className={homeStyles.parallaxBg}>
         <div className={homeStyles.content}>
@@ -11,6 +13,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </AnimatePresence>
   );
 };
 
