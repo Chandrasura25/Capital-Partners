@@ -5,6 +5,7 @@
     height: 100vh;
 }
 .container .slider{
+    padding-top: 66px;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,55 +42,71 @@
     font-size: 18px;
     transition: .5s;
 }
-.container .slider .slide.slide4{
-    background: url(img/pexels-pixabay-235621.jpg);
+.container .slider .slide.slide5{
+    background: beige;
     background-size: cover;
     background-position: center;
 }
-.container .slider .slide.slide2{
-    background: url(img/pexels-warren-blake-1477430.jpg);
+.container .slider .slide.slide4{
+    background: black;
     background-size: cover;
     background-position: center;
 }
 .container .slider .slide.slide3{
-    background: url(img/pexels-luis-del-río-15286.jpg);
+    background:blue;
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide2{
+    background:blueviolet;
     background-size: cover;
     background-position: center;
 }
 .container .slider .slide.slide1{
-    background: url(img/pexels-pixabay-371589.jpg);
+    background:brown;
     background-size: cover;
     background-position: center;
 }
 @keyframes animate {
-    0%{
-        left:0;
+    0% {
+        left: 0;
     }
-    20%{
-        left:0;
+    10% {
+        left: 0;
     }
-    25%{
-        left:-100%;
+    20% {
+        left: -100%;
     }
-    45%{
-        left:-100%;
+    30% {
+        left: -100%;
     }
-    50%{
-        left:-200%;
+    40% {
+        left: -200%;
     }
-    70%{
-        left:-200%;
+    50% {
+        left: -200%;
     }
-    75%{
-        left:-300%;
+    60% {
+        left: -300%;
     }
-    95%{
-        left:-300%;
+    70% {
+        left: -300%;
     }
-    100%{
-        left:-400%;
+    80% {
+        left: -400%;
+    }
+    90% {
+        left: -400%;
+    }
+    97%{
+        left: -500%;
+    }
+    99% {
+        left: -500%;
     }
 }
+
+
 @media (max-width:768px) {
     .container .slider .slide .caption{
         bottom: 20px;
