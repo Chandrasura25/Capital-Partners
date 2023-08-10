@@ -9,13 +9,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 500%;
+    width: 600vw;
     height: 100%;
-    animation: animate 10s linear infinite;
+    animation: animate 20s linear infinite;
 }
 .container .slider .slide{
     position: relative;
-    width: 20%;
+    width: 100vw;
     height: 100%;
     float: left;
 }
@@ -98,10 +98,7 @@
     90% {
         left: -400%;
     }
-    97%{
-        left: -500%;
-    }
-    99% {
+    100% {
         left: -500%;
     }
 }
