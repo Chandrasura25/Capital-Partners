@@ -1,6 +1,6 @@
 import aboutStyle from "../styles/About.module.css";
 import { motion } from "framer-motion";
-import { AboutText } from "../utils/about";
+import { AboutText } from "../utils/constantant";
 const About = () => {
   const Variant = {
     initial: { opacity: 0 },
