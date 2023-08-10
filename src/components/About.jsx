@@ -76,7 +76,7 @@ const transition = {
         </div>
         <div className={`${aboutStyle.slide} ${aboutStyle.slide5}`}>
           <div className={aboutStyle.caption}>
-            <h2>Partner with Us</h2>
+            <h2>Invest with Us</h2>
             <p>
               We invite you to explore the possibilities of partnering with
               Capital Partners Investment Plc, where your financial goals meet
