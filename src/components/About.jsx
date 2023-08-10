@@ -49,7 +49,7 @@ const transition = {
         </motion.div>
         <div className={`${aboutStyle.slide} ${aboutStyle.slide3}`}>
           <div className={aboutStyle.caption}>
-            <h2>Slide3</h2>
+            <h2>Portfolio</h2>
             <p>
               Our investment portfolio encompasses a wide range of sectors,
               providing opportunities for both domestic and international
@@ -63,7 +63,7 @@ const transition = {
         </div>
         <div className={`${aboutStyle.slide} ${aboutStyle.slide4}`}>
           <div className={aboutStyle.caption}>
-            <h2>Slide4</h2>
+            <h2>Expertise</h2>
             <p>
               At Capital Partners Investment Plc, we combine our extensive
               industry knowledge, market insights, and investment expertise to
@@ -76,7 +76,7 @@ const transition = {
         </div>
         <div className={`${aboutStyle.slide} ${aboutStyle.slide5}`}>
           <div className={aboutStyle.caption}>
-            <h2>Slide5</h2>
+            <h2>Partner with Us</h2>
             <p>
               We invite you to explore the possibilities of partnering with
               Capital Partners Investment Plc, where your financial goals meet
