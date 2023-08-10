@@ -3,6 +3,7 @@ import About from "../components/About";
 import Mission from "../components/Mission";
 import homeStyles from "../styles/Home.module.css";
 import {AnimatePresence} from "framer-motion";
+import Vision from "../components/Vision";
 const Home = () => {
   return (
     <AnimatePresence>
@@ -12,6 +13,7 @@ const Home = () => {
           <Navbar />
           <About />
           <Mission />
+          <Vision/>
         </div>
       </div>
     </div>
