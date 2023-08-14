@@ -4,7 +4,6 @@ import { AboutText } from '../utils/constant';
 import { Variant, textVariants, transition, slideContainerVariants } from '../utils/animationVariants';
 
 const About = () => {
- 
 
   return (
     <div className={aboutStyle.container}>

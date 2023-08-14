@@ -5,7 +5,7 @@
     height: 100vh;
 }
 .container .slider{
-    padding-top: 66px;
+    /* padding-top: 66px; */
     position: absolute;
     top: 0;
     left: 0;
