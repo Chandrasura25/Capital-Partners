@@ -11,7 +11,7 @@
     left: 0;
     width: 600vw;
     height: 100%;
-    animation: animate 15s linear infinite;
+    /* animation: animate 15s linear infinite; */
 }
 .container .slider .slide{
     position: relative;
