@@ -1,21 +1,10 @@
-import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import aboutStyle from '../styles/About.module.css';
 import { AboutText } from '../utils/constant';
 import { Variant, textVariants, transition, slideContainerVariants } from '../utils/animationVariants';
 
 const About = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % AboutText.length);
-    }, 5000); // Change slide every 5 seconds
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+ 
 
   return (
     <div className={aboutStyle.container}>
@@ -35,7 +24,6 @@ const About = () => {
               animate="visible"
               exit="hidden"
               key={index}
-              custom={index === currentSlide ? 0 : 1}
             >
               <div className={aboutStyle.caption}>
                 <motion.h2 variants={textVariants} transition={transition}>
