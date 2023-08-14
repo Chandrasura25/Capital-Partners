@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-
+import missionStyle from "../styles/Mission.module.css";
+import { textVariant, fadeIn, slideIn } from "../utils/animationVariants";
 const Mission = () => {
   return (
-    <motion.section className="" id="mission">
-      <motion.div>
-        <motion.h2>Our Mission</motion.h2>
-        <motion.div className="textBx">
-          <motion.p>
+    <motion.section className={missionStyle.mission} id="mission">
+        <motion.h2 className={missionStyle.titleText}>Our <span>Mission</span></motion.h2>
+      <motion.div variants={textVariant()} className={missionStyle.row}>
+        <motion.div variants={slideIn("left", "tween")} className={missionStyle.col50}>
+          <motion.p variants={fadeIn("", "", 0.1, 1)} className={missionStyle.content}>
             At Capital Partners Investment PLC, our mission is to provide
             exceptional investment solutions that enable our clients to achieve
             their financial goals and secure their financial future. We are
@@ -17,7 +18,7 @@ const Mission = () => {
             creation and capital preservation.
           </motion.p>
         </motion.div>
-        <motion.div className="imgBx"></motion.div>
+        <motion.div className="imgBx" variants={slideIn("right", "tween")}></motion.div>
       </motion.div>
     </motion.section>
   );
