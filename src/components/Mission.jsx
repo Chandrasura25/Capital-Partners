@@ -10,9 +10,9 @@ const Mission = () => {
           <motion.p variants={fadeIn("", "", 0.1, 1)} className={missionStyle.content}>
             At Capital Partners Investment PLC, our mission is to provide
             exceptional investment solutions that enable our clients to achieve
-            their financial goals and secure their financial future. We are
+            their financial goals and secure their financial future. <br/><br/> We are
             committed to delivering superior returns while maintaining the
-            highest standards of integrity, transparency, and professionalism.
+            highest standards of integrity, transparency, and professionalism.<br/><br/>
             Through rigorous research, prudent risk management, and a
             client-centric approach, we aim to be a trusted partner in wealth
             creation and capital preservation.

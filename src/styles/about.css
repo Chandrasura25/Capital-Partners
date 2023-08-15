@@ -17,27 +17,29 @@
     height: 100%;
     opacity: 0;
     transition: .5s;
+    visibility: hidden;
 }
 .container .slider .slide.active{
     opacity: 1;
+    visibility: visible;
 }
-.container .slider .slide.slide1{
+.container .slider .slide:nth-child(1){
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container .slider .slide.slide1 .caption{
+.container .slider .slide:nth-child(1) .caption{
     position: relative;
     max-width: 650px;
     text-align: center;
     color: #fff;
 }
-.container .slider .slide.slide2{
+.container .slider .slide:nth-child(2){
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.container .slider .slide.slide2 .caption{
+.container .slider .slide:nth-child(2) .caption{
     position: relative;
     max-width: 600px;
     text-align: left;
@@ -49,7 +51,7 @@
     transition: .5s;
 }
 
- .container .slider .slide.slide3 .caption, .container .slider .slide.slide4 .caption, .container .slider .slide.slide5 .caption{
+ .container .slider .slide:nth-child(3) .caption, .container .slider .slide:nth-child(4) .caption, .container .slider .slide:nth-child(5) .caption{
     position: absolute;
     bottom: 60px;
     left: 60px;
@@ -73,27 +75,27 @@
     font-size: 18px;
     transition: .5s;
 } 
-.container .slider .slide.slide5{
+.container .slider .slide:nth-child(5){
     background: url(../assets/s5.jpg);
     background-size: cover;
     background-position: center;
 }
-.container .slider .slide.slide4{
+.container .slider .slide:nth-child(4){
     background: url(../assets/f4.jpg);
     background-size: cover;
     background-position: center;
 }
-.container .slider .slide.slide3{
+.container .slider .slide:nth-child(3){
     background:url(../assets/c.png);
     background-size: cover;
     background-position: center;
 }
-.container .slider .slide.slide2{
+.container .slider .slide:nth-child(2){
     background:url(../assets/rep1.png);
     background-size: cover;
     background-position: center;
 }
-.container .slider .slide.slide1{
+.container .slider .slide:nth-child(1){
     background:url(../assets/download.jpg);
     background-size: cover;
     background-position: center;

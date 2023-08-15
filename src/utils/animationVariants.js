@@ -15,10 +15,10 @@ export const transition = {
     delay: 0.2, // Delay before transition
 };
 
-export const slideContainerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
-};
+// export const slideContainerVariants = {
+//     hidden: { opacity: 0 },
+//     visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+// };
 export const textVariant = (delay) => {
     return {
         hidden: {

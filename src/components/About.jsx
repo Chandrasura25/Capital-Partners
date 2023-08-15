@@ -1,30 +1,36 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import aboutStyle from '../styles/About.module.css';
+// import aboutStyle from '../styles/About.module.css';
+import { Variant, textVariants, transition } from '../utils/animationVariants';
+import { useState, useEffect } from 'react';  
 import { AboutText } from '../utils/constant';
-import { Variant, textVariants, transition, slideContainerVariants } from '../utils/animationVariants';
-
+import "../styles/about.css"
 const About = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide(prevSlide => (prevSlide + 1) % AboutText.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   return (
-    <div className={aboutStyle.container}>
+    <div className='container'>
       <motion.div
-        className={aboutStyle.slider}
-        variants={slideContainerVariants}
-        initial="hidden"
-        animate="visible"
-        exit="hidden"
+        className='slider'
       >
         <AnimatePresence>
           {AboutText.map((text, index) => (
             <motion.div
-              className={`${aboutStyle.slide} ${aboutStyle["slide" + text.id]}`}
+              className={`slide ${
+                index === activeSlide ? 'active' : ''
+              }`}
               variants={Variant}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
               key={index}
             >
-              <div className={aboutStyle.caption}>
+              <div className='caption'>
                 <motion.h2 variants={textVariants} transition={transition}>
                   {text.title}
                 </motion.h2>
@@ -32,16 +38,6 @@ const About = () => {
               </div>
             </motion.div>
           ))}
-          <motion.div className={`${aboutStyle.slide} ${aboutStyle.slide1}`} variants={Variant}>
-            <div className={aboutStyle.caption}>
-              <motion.h2 variants={textVariants} transition={transition}>
-              Welcome to Capital Partners Investment Plc
-              </motion.h2>
-              <p>
-              A leading investment company with a diverse portfolio covering various sectors of the economy. With a steadfast commitment to excellence and a track record of success, we aim to facilitate growth, create value, and generate sustainable returns for our investors.
-              </p>
-            </div>
-          </motion.div>
         </AnimatePresence>
       </motion.div>
     </div>
