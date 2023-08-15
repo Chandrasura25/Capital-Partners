@@ -12,13 +12,13 @@
 }
 .titleText {
   color: #111;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 3em;
+  font-weight: 700;
 }
 .titleText span {
   color: #43a5f6;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .content{
   margin-top:20px;
