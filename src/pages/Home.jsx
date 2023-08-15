@@ -5,6 +5,7 @@ import homeStyles from "../styles/Home.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeIn } from "../utils/animationVariants";
 import Vision from "../components/Vision";
+import Pillar from "../components/Pillar";
 const Home = () => {
   return (
     <AnimatePresence>
@@ -18,6 +19,7 @@ const Home = () => {
             <About />
             <Mission />
             <Vision />
+            <Pillar/>
           </div>
         </div>
       </motion.div>
