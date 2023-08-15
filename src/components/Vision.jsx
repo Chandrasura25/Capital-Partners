@@ -1,9 +1,13 @@
 import { motion } from "framer-motion"
-import visionStyle from "../styles/Vision.module.css"
+import visionStyle from "../styles/Vision.module.css";
+import { textVariant } from "../utils/animationVariants";
 
 const Vision = () => {
   return (
-    <motion.section className={visionStyle.vision}>Our vision at Capital Partners Investment PLC is to be the leading investment company, recognized for our innovative strategies, exceptional performance, and unwavering commitment to our clients. We strive to be the investment firm of choice, consistently exceeding expectations and setting new industry standards. By leveraging our expertise, fostering long-term relationships, and embracing cutting-edge technology, we aim to empower individuals, institutions, and communities to thrive financially and make a positive impact on the world.</motion.section>
+    <motion.section className={visionStyle.vision}>
+      <motion.h2 variants={textVariant()} className={visionStyle.titleText}>Our <span>Vision</span></motion.h2>
+      Our vision at Capital Partners Investment PLC is to be the leading investment company, recognized for our innovative strategies, exceptional performance, and unwavering commitment to our clients. We strive to be the investment firm of choice, consistently exceeding expectations and setting new industry standards. By leveraging our expertise, fostering long-term relationships, and embracing cutting-edge technology, we aim to empower individuals, institutions, and communities to thrive financially and make a positive impact on the world.
+    </motion.section>
   )
 }
 

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import missionStyle from "../styles/Mission.module.css";
+import { motion } from "framer-motion"; 
+import missionStyle from "../styles/Mission.module.css"; 
 import { textVariant, fadeIn, slideIn } from "../utils/animationVariants";
 import m_logo from "../assets/images/m2.jpg";
 const Mission = () => {
