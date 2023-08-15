@@ -28,3 +28,11 @@
   color: #fff;
   font-size: 1.3em;
 }
+@media (max-width: 991px) {
+    .vision {
+      padding: 20px;
+    }
+    .titleText {
+        text-align: center;
+    }
+}
