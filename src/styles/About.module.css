@@ -112,4 +112,7 @@
   .container .slider .slide .caption p {
     font-size: 16px;
   }
+  .container .slider .slide.slide2 .caption {
+    margin-left: 20px;
+  }
 }

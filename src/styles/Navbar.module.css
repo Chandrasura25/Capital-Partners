@@ -74,9 +74,9 @@
     .header nav{
         position: absolute;
         width: 100%;
-        top: 66px;
+        top: 70px;
         left: 0;
-        background: #445964;
+        background: #43a5f6;
         display: none;
     }
     .header.active nav{
