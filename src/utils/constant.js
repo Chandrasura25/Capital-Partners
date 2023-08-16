@@ -101,3 +101,30 @@ export const investText=[
         content:'Capital Partners Investment PLC offers a range of simplified investment options with daily accessible returns on investment, allowing investors to withdraw their earnings on a daily basis. These investment options are designed to provide flexibility and convenience, catering to the varying needs and preferences of investors.',
     },
 ]
+export const optionText=[
+    {
+        id:1,
+        title:'Daily Accessible Return on Investment',
+        description:"Capital Partners Investment PLC offers investment options that generate daily returns on investment. This means that investors can earn profits on a daily basis, allowing for steady income and the potential for compounding returns over time. The daily accessibility of these returns means that investors can withdraw their earnings whenever they choose, providing them with liquidity and financial freedom.",
+    },
+    {
+        id:2,
+        title:'Withdrawal Flexibility',
+        description:"One of the key advantages of Capital Partners Investment PLC's investment options is the flexibility to withdraw funds daily. This feature allows investors to access their earnings whenever they need them, providing a convenient solution for those who require regular cash flow or have short-term financial goals. Whether you need to cover unexpected expenses or take advantage of investment opportunities elsewhere, the ability to withdraw daily offers peace of mind and financial control.",
+    },
+    {
+        id:3,
+        title:'Convenience and Ease of Use',
+        description:"Capital Partners Investment PLC aims to make investing as convenient and user-friendly as possible. Their investment platform provides a seamless and intuitive experience, allowing investors to monitor their investment performance, track returns, and make withdrawals effortlessly. With user-friendly interfaces and dedicated customer support, investors can easily manage their investments and access their funds whenever they need them.",
+    },
+    {
+        id:4,
+        title:'Diversified Investment Options',
+        description:"Capital Partners Investment PLC offers a diverse range of investment options to suit different risk appetites and investment goals. Whether you are seeking conservative, moderate, or aggressive investment strategies, there are options available to match your preferences. From low-risk fixed income products to higher-yield equity-based investments, the company provides a variety of choices to diversify your portfolio and potentially enhance returns.",
+    },
+    {
+        id:5,
+        title:'Transparent Reporting and Accountability',
+        description:"Capital Partners Investment PLC is committed to transparency and accountability. Investors can access detailed reports on their investments, including performance summaries, earnings statements, and transaction histories. This level of transparency enables investors to monitor their investments effectively and make informed decisions based on real-time data.",
+    },
+]

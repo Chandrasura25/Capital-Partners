@@ -44,7 +44,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a href="#">Why you should invest with us</a>
+              <a href="#invest">Why you should invest with us</a>
             </li>
             <li>
               <a href="#">FAQs</a>
