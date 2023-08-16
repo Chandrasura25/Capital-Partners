@@ -47,21 +47,25 @@ export const pillarText =[
     {
         id:4,
         title: "Oil and Gas",
-        content: "Recognizing Nigeria's position as a major player in the global oil and gas industry, we actively invest in this sector. Our focus is on projects that promote sustainable exploration, production, and refining practices, while also supporting local content development."
+        content: "Recognizing Nigeria's position as a major player in the global oil and gas industry, we actively invest in this sector. Our focus is on projects that promote sustainable exploration, production, and refining practices, while also supporting local content development.",
+        clr: "#ff5b0f"
     },
     {
         id:5,
         title: "Education",
-        content: "Education is a fundamental pillar of social and economic progress. We invest in educational institutions and initiatives that promote access to quality education, drive innovation in teaching methodologies, and equip individuals with the skills necessary for success in the modern world."
+        content: "Education is a fundamental pillar of social and economic progress. We invest in educational institutions and initiatives that promote access to quality education, drive innovation in teaching methodologies, and equip individuals with the skills necessary for success in the modern world.",
+        clr: "#0f8a1c"
     },
     {
         id:6,
         title: "Technology",
-        content: "In an increasingly digital and interconnected world, technology plays a pivotal role in driving growth and transformation. We invest in technology-driven ventures, startups, and infrastructure projects that have the potential to revolutionize industries and create new opportunities."
+        content: "In an increasingly digital and interconnected world, technology plays a pivotal role in driving growth and transformation. We invest in technology-driven ventures, startups, and infrastructure projects that have the potential to revolutionize industries and create new opportunities.",
+        clr: "#4500ff",
     },
     {
         id:7,
         title: "Food",
-        content: "As a vital sector that sustains the population, we recognize the importance of investing in food production, processing, and distribution. Our investments aim to enhance agricultural productivity, improve food security, and support sustainable farming practices."
+        content: "As a vital sector that sustains the population, we recognize the importance of investing in food production, processing, and distribution. Our investments aim to enhance agricultural productivity, improve food security, and support sustainable farming practices.",
+        clr: "#ff0",
     },
 ]
