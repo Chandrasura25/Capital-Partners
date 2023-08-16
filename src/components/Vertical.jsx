@@ -8,7 +8,7 @@ const Vertical = ({id,title,content, icon}) => {
     contentStyle={{ background: '#43a5f6', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #43a5f6' }} 
     iconStyle={{ background: '#43a5f6', color: '#fff' }}
-    icon={<i className={icon}></i>}>
+    icon={<div className={investStyles.iconBox}><i className={icon}></i></div>}>
       <h3 className={investStyles.title}>0{id}</h3>
       <h4 className={investStyles.subtitle}>{title}</h4>
       <p className={investStyles.content}>{content}</p>
