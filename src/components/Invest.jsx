@@ -4,14 +4,14 @@ const Invest = () => {
   return (
     <motion.section id="invest" className={investStyles.container}>
       <motion.div>
-        <motion.h2>WHY YOU SHOULD INVEST WITH US</motion.h2>
-        <motion.h4>
+        <motion.h2 className={investStyles.titleText}>WHY YOU SHOULD <span>INVEST WITH US</span></motion.h2>
+        <motion.h4 className={investStyles.subText}>
           Capital Partners Investment Plc:{" "}
           <span>
             Unlocking Diverse Investment Opportunities for a Thriving Future
           </span>
         </motion.h4>
-        <motion.p>
+        <motion.p className={investStyles.top}>
           In a rapidly evolving global economy, investors seek opportunities
           that combine stability, growth potential, and diversification. Enter
           Capital Partners Investment Plc, an innovative and forward-thinking
@@ -20,7 +20,7 @@ const Invest = () => {
           transportation, real estate, health, oil and gas, education,
           technology, and food, Capital Partners Investment Plc presents an
           enticing proposition for individuals and businesses seeking to
-          maximize their investment potential.
+          maximize their investment potential. 
           <i>
             This is why Capital Partners Investment Plc should be at the top of
             every investor`s list.
