@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { fadeIn } from "../utils/animationVariants";
 import Vision from "../components/Vision";
 import Pillar from "../components/Pillar";
+import Invest from "../components/Invest";
 const Home = () => {
   return (
     <AnimatePresence>
@@ -20,6 +21,7 @@ const Home = () => {
             <Mission />
             <Vision />
             <Pillar/>
+            <Invest/>
           </div>
         </div>
       </motion.div>
