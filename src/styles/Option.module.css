@@ -1,13 +1,13 @@
-.container{
+.contain{
     position: relative;
-    width: 1150px;
+    width: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.container .card{
+.card{
     position: relative;
     width: 300px;
     height: 420px;
@@ -18,7 +18,7 @@
     transition: .5s;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
-.container .card .circle{
+ .card .circle{
     position: relative;
     width: 100%;
     height: 100%;
@@ -26,31 +26,36 @@
     clip-path: circle(180px at center 0);
     text-align: center;
 }
-.container .card .circle h2{
+.card .circle h2{
     color: #fff;
-    font-size: 4.5em;
-    padding: 30px 0;
+    font-size: 4em;
+    padding: 10px 0;
 }
-.container .card .content{
+.card .content{
     position: absolute;
     bottom: 10px;
     page-break-after: 20px;
     text-align: center;
+    padding: 0 20px;
 }
-.container:hover .card{
+.card .content p{
+    height: 130px;
+    overflow: hidden;
+}
+/* .contain:hover .card{
     filter: blur(20px);
     transform: scale(0.9);
     opacity: 0.5;
-}
-.container .card:hover{
+} */
+.card:hover{
     filter: blur(0px);
     transform: scale(1.1);
     opacity: 1;
 }
-.container .card .content p{
+.card .content p{
     color: #666;
 }
-.container .card .content a{
+.card .content a{
     position: relative;
     display: inline-block;
     padding: 10px 20px;

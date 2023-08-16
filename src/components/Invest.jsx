@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import investStyles from "../styles/Invest.module.css";
-import { textVariant, fadeIn } from "../utils/animationVariants";
+import optionStyles from "../styles/Option.module.css";
+import { textVariant, fadeIn, slideIn } from "../utils/animationVariants";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Vertical from "./Vertical";
-import { investText } from "../utils/constant";
+import { investText, optionText } from "../utils/constant";
 import Option from "./Option";
 const Invest = () => {
   return (
@@ -53,8 +54,13 @@ const Invest = () => {
         potential, Capital Partners Investment presents an enticing opportunity
         to navigate the complexities
       </motion.div>
-      <motion.div className={investStyles.options}>
-        <Option/>
+      <motion.div className={investStyles.options} variants={slideIn("right", "tween")}>
+        <div className={optionStyles.contain}>
+        {optionText.map((option, index) => (
+          <Option key={index} {...option} index={index} />
+        ))  
+        }
+        </div>
       </motion.div>
     </motion.section>
   );
