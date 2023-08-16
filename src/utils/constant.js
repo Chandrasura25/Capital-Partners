@@ -2,7 +2,7 @@ export const AboutText = [
     {
         id: 1,
         title: "Welcome to Capital Partners Investment Plc",
-        description: "A leading investment company with a diverse portfolio covering various sectors of the economy. With a steadfast commitment to excellence and a track record of success, we aim to facilitate growth, create value, and generate sustainable returns for our investors."
+        description: "A leading investment company with a diverse portfolio covering various sectors of the economy. With a steadfast commitment to excellence and a track record of success, we aim to facilitate growth, create value, and generate sustainable returns for our investors.",
     },
     {
         id: 2,
@@ -29,17 +29,20 @@ export const pillarText =[
     {
         id:1,
         title: "Transportation",
-        content: "We recognize the importance of efficient transportation networks in driving economic activity. Our investments in this sector aim to improve infrastructure, enhance logistics capabilities, and support the growth of the transportation industry."
+        content: "We recognize the importance of efficient transportation networks in driving economic activity. Our investments in this sector aim to improve infrastructure, enhance logistics capabilities, and support the growth of the transportation industry.",
+        clr : "#ff0f5b",
     },
     {
         id:2,
         title: "Real Estate",
-        content: "The real estate sector offers tremendous opportunities for wealth creation and capital appreciation. Through our strategic investments, we aim to develop and manage high-quality properties that meet the needs of individuals, businesses, and communities."
+        content: "The real estate sector offers tremendous opportunities for wealth creation and capital appreciation. Through our strategic investments, we aim to develop and manage high-quality properties that meet the needs of individuals, businesses, and communities.",
+        clr: "#be01fe",
     },
     {
         id:3,
         title: "Health",
-        content: "We understand the critical role that a robust healthcare system plays in societal well-being. Our investments in the health sector focus on supporting the development of modern healthcare facilities, expanding access to quality medical services, and fostering innovation in healthcare delivery."
+        content: "We understand the critical role that a robust healthcare system plays in societal well-being. Our investments in the health sector focus on supporting the development of modern healthcare facilities, expanding access to quality medical services, and fostering innovation in healthcare delivery.",
+        clr: "#01b4ff"
     },
     {
         id:4,
