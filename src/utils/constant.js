@@ -75,36 +75,42 @@ export const investText=[
         title:'Diversification Across Key Sectors',
         content:"Capital Partners Investment Plc understands the importance of diversification in an investment portfolio. By spanning multiple sectors, the company ensures that investors are not reliant on the performance of a single industry. This strategy mitigates risk and allows for balanced growth. Whether it's the stability of real estate, the technological innovations of the education sector, or the increasing demand for healthcare services, Capital Partners Investment has carefully curated an investment portfolio that offers a spectrum of opportunities.",
         icon:'fa fa-pie-chart', 
+        clr:'#ff0f5b',
     },
     {
         id:2,
         title:'Expertise and Market Insight',
         content:"One of the key distinguishing factors of Capital Partners Investment Plc is its team of seasoned investment professionals. With years of experience, these experts possess an in-depth understanding of the sectors in which they invest. Their ability to identify emerging trends, assess market dynamics, and capitalize on lucrative opportunities gives investors a distinct advantage. By leveraging their expertise, Capital Partners Investment ensures that investors' capital is placed in ventures with the highest potential for growth and profitability.",
         icon:"fa fa-line-chart",
+        clr:'#be01fe',
     },
     {
         id:3,
         title:'Long-Term Vision',
         content:'Capital Partners Investment is driven by a long-term vision that seeks to create sustainable value for its stakeholders. Rather than focusing solely on short-term gains, the company carefully selects investments that align with its commitment to environmental, social, and governance (ESG) principles. By investing in sectors such as renewable energy, sustainable real estate, and technology-driven healthcare solutions, Capital Partners Investment Plc contributes to a more resilient and equitable future.',
         icon:'fa fa-eye',
+        clr:'#01b4ff',
     },
     {
         id:4,
         title:'Embracing Technological Disruption',
         content:"The digital revolution has transformed industries across the globe, and Capital Partners Investment recognizes the immense potential that technology holds. By actively seeking out investments in the technology sector, the company positions itself at the forefront of innovation. Whether it's artificial intelligence, blockchain, or e-commerce, Capital Partners Investment Plc embraces disruptive technologies that are reshaping the business landscape. This proactive approach enables investors to capitalize on the transformative power of technology, unlocking new avenues for growth and profitability.",
         icon:'fa fa-cogs',
+        clr:'#ff5b0f',
     },
     {
         id:5,
         title:'Global Outlook',
         content:'Capital Partners Investment has a global outlook, capitalizing on investment opportunities beyond geographical boundaries. This approach allows investors to benefit from the diversification of both sectors and markets. By strategically investing in regions with robust economic growth and emerging markets, the company taps into untapped potential and unlocks opportunities that traditional investment firms may overlook.',
         icon:'fa fa-globe',
+        clr:'#0f8a1c',
     },
     {
         id:6,
         title:'Simplified Investment Options',
         content:'Capital Partners Investment PLC offers a range of simplified investment options with daily accessible returns on investment, allowing investors to withdraw their earnings on a daily basis. These investment options are designed to provide flexibility and convenience, catering to the varying needs and preferences of investors.',
         icon:'fa fa-handshake-o',
+        clr:'#4500ff',
     },
 ]
 export const optionText=[
