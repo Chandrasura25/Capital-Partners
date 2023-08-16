@@ -93,13 +93,16 @@
   font-size: 1.7em;
   color: var(--clr);
 }
+.drop .content h4 {
+  color: #333;
+}
 .drop .content p {
   font-size: 0.9em;
   color: #333;
   font-weight: 400;
   height: 110px;
   overflow: hidden;
-  transition:0.5s;
+  transition: 0.5s;
 }
 .drop.active .content p {
   transition-delay: 0.3s;
@@ -116,9 +119,9 @@
   opacity: 0.75;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
-  outline:none;
-  border:none;
-  cursor:pointer;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 .drop .content .more:hover {
   opacity: 1;
@@ -136,7 +139,7 @@
 }
 .drop .content .more::after {
   content: "Read More";
-  transition:0.5s;
+  transition: 0.5s;
 }
 .drop.active .content .more::after {
   content: "Read Less";

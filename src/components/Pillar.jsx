@@ -26,7 +26,7 @@ const Pillar = () => {
           </motion.p>
         </motion.div>
         <motion.div>
-          <motion.p className={pillarStyles.subText}>
+          <motion.p className={pillarStyles.subText} variants={textVariant()}>
             THE <span>7 PILLARS</span> OF OUR INVESTMENT
           </motion.p>
           <motion.div className={pillarStyles.container}>
@@ -35,7 +35,9 @@ const Pillar = () => {
             ))}
           </motion.div>
         </motion.div>
-        <div className="bottom">
+        <motion.div variants={fadeIn("", "", 0.1, 1)}
+          className={pillarStyles.bottom}>
+          <motion.p>
           At Capital Partners Investment Plc, we combine our extensive industry
           knowledge, market insights, and investment expertise to identify and
           execute value-driven opportunities. Our team of seasoned professionals
@@ -44,7 +46,8 @@ const Pillar = () => {
           We invite you to explore the possibilities of partnering with Capital
           Partners Investment Plc, where your financial goals meet our strategic
           vision, creating a path to mutual success.
-        </div>
+          </motion.p>
+        </motion.div>
       </motion.section>
     </>
   );

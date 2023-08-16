@@ -22,7 +22,7 @@
   padding: 0px 100px;
 }
 .subText {
-  color: #333;
+  color: #43a5f6;
   font-size: 1.5em;
   font-weight: 400;
   text-align: center;
@@ -34,12 +34,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 30px 0;
   gap: 40px 60px;
 }
-/*.titleText p {
-  color: #111;
+.bottom{
+  position: relative;
   font-size: 1em;
   font-weight: 400;
-  margin-top: 20px;
-} */
+  text-align: center;
+  padding: 0px 100px;
+  color: #333;
+}
