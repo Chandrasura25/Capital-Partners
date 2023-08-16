@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/animationVariants";
 import pillarStyles from "../styles/Pillar.module.css";
+import Card from "./Card";
+import { pillarText } from "../utils/constant";
 const Pillar = () => {
   return (
     <>
@@ -10,15 +12,29 @@ const Pillar = () => {
             OUR CORE <span>INVESTMENT SECTORS</span>
           </motion.p>
         </div>
-        <motion.div variants={fadeIn("", "", 0.1, 1)} className={pillarStyles.top}>
-          <motion.p variants={textVariant()}>Our investment portfolio encompasses a wide range of sectors,
-          providing opportunities for both domestic and international investors.
-          We believe in the power of strategic investments to drive economic
-          development and improve the lives of individuals. As such, we have
-          carefully selected sectors that are essential to Nigeria`s growth and
-          have significant potential for long-term profitability.</motion.p>
+        <motion.div
+          variants={fadeIn("", "", 0.1, 1)}
+          className={pillarStyles.top}
+        >
+          <motion.p variants={textVariant()}>
+            Our investment portfolio encompasses a wide range of sectors,
+            providing opportunities for both domestic and international
+            investors. We believe in the power of strategic investments to drive
+            economic development and improve the lives of individuals. As such,
+            we have carefully selected sectors that are essential to Nigeria`s
+            growth and have significant potential for long-term profitability.
+          </motion.p>
         </motion.div>
-        <motion.p className={pillarStyles.subText}>THE <span>7 PILLARS</span> OF OUR INVESTMENT</motion.p>
+        <motion.div>
+          <motion.p className={pillarStyles.subText}>
+            THE <span>7 PILLARS</span> OF OUR INVESTMENT
+          </motion.p>
+          <motion.div className={pillarStyles.container}>
+            {pillarText.map((pillar, index) => (
+              <Card key={index} {...pillar} index={index} />
+            ))}
+          </motion.div>
+        </motion.div>
         <div className="bottom">
           At Capital Partners Investment Plc, we combine our extensive industry
           knowledge, market insights, and investment expertise to identify and
