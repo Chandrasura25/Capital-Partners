@@ -40,6 +40,18 @@ body{
 .container .drop:nth-child(3){
     border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
 }
+.container .drop:nth-child(4){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+.container .drop:nth-child(5){
+    border-radius: 72% 27% 59% 41% / 57% 59% 41% 43%;
+}
+.container .drop:nth-child(6){
+    border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
+}
+.container .drop:nth-child(7){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
 .container .drop:hover{
     border-radius: 50%;
 }
