@@ -21,7 +21,7 @@ const Option = ({ clr, title, index, id, description }) => {
       </div>
       <div className={optionStyles.content}>
         <p>{description}</p>
-        <button className={optionStyles.more} onClick={toggleDrop}>Read More</button>
+        <button className={optionStyles.more} onClick={toggleDrop}></button>
       </div>
     </motion.div>
   );
