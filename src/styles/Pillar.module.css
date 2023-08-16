@@ -4,22 +4,29 @@
   padding: 80px;
 }
 .titleText {
-  color: #111;
+  color: #333;
   font-size: 3em;
   font-weight: 500;
   text-align: center;
 }
- .titleText span {
+.titleText span {
   color: #43a5f6;
   font-weight: 400;
   font-size: 0.9em;
 }
-.top{
-    position: relative;
-    font-size: 1em;
-    font-weight: 400;
-    text-align: center;
-    padding: 20px 100px 0;
+.top {
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 100px;
+}
+.subText {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px;
 }
 /*.titleText p {
   color: #111;

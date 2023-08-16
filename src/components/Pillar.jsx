@@ -18,7 +18,7 @@ const Pillar = () => {
           carefully selected sectors that are essential to Nigeria`s growth and
           have significant potential for long-term profitability.</motion.p>
         </motion.div>
-        <br /> <span>THE 7 PILLARS OF OUR INVESTMENT</span>
+        <motion.p className={pillarStyles.subText}>THE <span>7 PILLARS</span> OF OUR INVESTMENT</motion.p>
         <div className="bottom">
           At Capital Partners Investment Plc, we combine our extensive industry
           knowledge, market insights, and investment expertise to identify and

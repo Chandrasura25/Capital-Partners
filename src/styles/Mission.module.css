@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 .titleText {
-  color: #111;
+  color: #333;
   font-size: 3em;
   font-weight: 700;
 }
@@ -24,6 +24,7 @@
   margin-top:20px;
   font-weight: 400;
   font-size: 1.4em;
+  color: #333;
 }
 .row .col50 {
   position: relative;
