@@ -1,0 +1,29 @@
+.pillar {
+  position: relative;
+  width: 100%;
+  padding: 80px;
+}
+.titleText {
+  color: #111;
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+ .titleText span {
+  color: #43a5f6;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.top{
+    position: relative;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 100px 0;
+}
+/*.titleText p {
+  color: #111;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 20px;
+} */
