@@ -20,7 +20,7 @@ const Card = ({ index, id, title, clr, content }) => {
         <h4>{title}</h4>
 
         <p>{content}</p>
-        <a href="#" className={cardStyles.more} onClick={toggleDrop}></a>
+        <button className={cardStyles.more} onClick={toggleDrop}></button>
       </div>
     </motion.div>
   );

@@ -66,6 +66,6 @@ export const pillarText =[
         id:7,
         title: "Food",
         content: "As a vital sector that sustains the population, we recognize the importance of investing in food production, processing, and distribution. Our investments aim to enhance agricultural productivity, improve food security, and support sustainable farming practices.",
-        clr: "#ff0",
+        clr: "#d37c45",
     },
 ]
