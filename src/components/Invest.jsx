@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
-
+import investStyles from "../styles/Invest.module.css";
 const Invest = () => {
   return (
-    <motion.section id="invest">
+    <motion.section id="invest" className={investStyles.container}>
       <motion.div>
         <motion.h2>WHY YOU SHOULD INVEST WITH US</motion.h2>
         <motion.h4>
