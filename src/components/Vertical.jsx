@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import investStyles from "../styles/Invest.module.css";
 const Vertical = ({id,title,content, icon}) => {
   return (
-    <VerticalTimelineElement className="vertical-timeline-element--work"
+    <VerticalTimelineElement className={investStyles.vertical}
     contentStyle={{ background: '#43a5f6', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #43a5f6' }} 
     iconStyle={{ background: '#43a5f6', color: '#fff' }}
@@ -12,7 +12,7 @@ const Vertical = ({id,title,content, icon}) => {
       <h3 className={investStyles.title}>0{id}</h3>
       <h4 className={investStyles.subtitle}>{title}</h4>
       <p className={investStyles.content}>{content}</p>
-      <button className={investStyles.more}>Read More</button>
+      <button className={investStyles.more}></button>
     </VerticalTimelineElement>
   )
 }
