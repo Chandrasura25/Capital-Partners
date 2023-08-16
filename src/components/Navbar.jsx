@@ -25,7 +25,7 @@ const Navbar = () => {
               <a href="#"> About us</a>
             </li>
             <li>
-              <a href="#">Investment Sectors</a>
+              <a href="#pillars">Investment Sectors</a>
             </li>
             <li>
               <a href="#">Investment Portal ▼</a>

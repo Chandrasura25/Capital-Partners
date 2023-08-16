@@ -6,7 +6,7 @@ import { pillarText } from "../utils/constant";
 const Pillar = () => {
   return (
     <>
-      <motion.section className={pillarStyles.pillar}>
+      <motion.section className={pillarStyles.pillar} id="pillars">
         <div className={pillarStyles.titleText}>
           <motion.p variants={textVariant()}>
             OUR CORE <span>INVESTMENT SECTORS</span>
