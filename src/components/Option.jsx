@@ -1,11 +1,17 @@
 import optionStyles from "../styles/Option.module.css";
+import { useState } from "react";
 import { fadeIn } from "../utils/animationVariants";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 const Option = ({ clr, title, index, id, description }) => {
+    const [isDropped, setIsDropped] = useState(false);
+
+    const toggleDrop = () => {
+      setIsDropped((prevState) => !prevState);
+    };
   return (
     <motion.div
-      className={optionStyles.card}
+      className={`${optionStyles.card} ${isDropped ? optionStyles.active : ""}`}
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       style={{ "--clr": clr }}
     >
@@ -15,7 +21,7 @@ const Option = ({ clr, title, index, id, description }) => {
       </div>
       <div className={optionStyles.content}>
         <p>{description}</p>
-        <a href="#">Read More</a>
+        <button className={optionStyles.more} onClick={toggleDrop}>Read More</button>
       </div>
     </motion.div>
   );
