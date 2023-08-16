@@ -45,3 +45,11 @@
   padding: 0px 100px;
   color: #333;
 }
+@media (max-width: 991px) {
+  .pillar {
+    padding: 20px;
+  }
+  .top, .bottom {
+    padding: 0 20px;
+  }
+  }
