@@ -18,6 +18,10 @@
   justify-content: center;
   align-items: center;
 }
+.drop.active {
+  width: 390px;
+  height: 390px;
+}
 .drop:nth-child(1) {
   border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
 }
@@ -71,13 +75,13 @@
   position: relative;
   flex-direction: column;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   gap: 15px;
 }
 .drop .content h2 {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #eff0f4;
   display: flex;
@@ -86,12 +90,22 @@
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
     inset -2px -5px 10px rgba(255, 255, 255, 1),
     15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
-  font-size: 2em;
+  font-size: 1.7em;
   color: var(--clr);
+}
+.drop .content p {
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 400;
+  height: 110px;
+  overflow: hidden;
+}
+.drop.active .content p {
+  height: auto;
 }
 .drop .content a {
   position: relative;
-  padding: 10px 25px;
+  padding: 10px 20px;
   background: var(--clr);
   color: #fff;
   text-decoration: none;
@@ -114,4 +128,10 @@
   height: 5px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
+}
+.drop .content .more::after {
+  content: "Read More";
+}
+.drop.active .content .more::after {
+  content: "Read Less";
 }
