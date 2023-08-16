@@ -5,14 +5,15 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Vertical from "./Vertical";
 import { investText } from "../utils/constant";
+import Option from "./Option";
 const Invest = () => {
   return (
     <motion.section id="invest" className={investStyles.container}>
-      <motion.div>
-        <motion.h2 variants={textVariant()} className={investStyles.titleText}>
+      <motion.div variants={textVariant()}>
+        <motion.h2  className={investStyles.titleText}>
           WHY YOU SHOULD <span>INVEST WITH US</span>
         </motion.h2>
-        <motion.h4 variants={textVariant()} className={investStyles.subText}>
+        <motion.h4 className={investStyles.subText}>
           Capital Partners Investment Plc:{" "}
           <span>
             Unlocking Diverse Investment Opportunities for a Thriving Future
@@ -44,13 +45,16 @@ const Invest = () => {
           ))}
         </VerticalTimeline>
       </motion.div>
-      <motion.div className={investStyles.bottom}>
+      <motion.div className={investStyles.bottom} variants={textVariant()}>
         Capital Partners Investment stands as a beacon of opportunity for
         investors seeking a diversified and forward-thinking investment company.
         We position ourself as a catalyst for success. Whether you are an
         individual investor or a business seeking to maximize your investment
         potential, Capital Partners Investment presents an enticing opportunity
         to navigate the complexities
+      </motion.div>
+      <motion.div className={investStyles.options}>
+        <Option/>
       </motion.div>
     </motion.section>
   );
