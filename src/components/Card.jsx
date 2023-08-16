@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/animationVariants";
 import PropTypes from "prop-types";
 import cardStyles from "../styles/Card.module.css";
-// import ReactReadMoreReadLess from "react-read-more-read-less";
 const Card = ({ index,id, title, clr, content }) => {
   return (
     <motion.div
